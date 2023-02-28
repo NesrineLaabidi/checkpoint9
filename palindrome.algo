@@ -1,6 +1,5 @@
 FUNCTION Is_palindrome(s,l,r) : 
 VAR
-    test:BOOLEAN;
     l,r:INTEGER;
 BEGIN
     IF (length(s)<2) THEN
