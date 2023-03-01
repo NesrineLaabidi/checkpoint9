@@ -1,17 +1,16 @@
-FUNCTION Is_palindrome(s,l,r) : 
+PROCEDURE Is_palindrome(s,l,r)
 VAR
     l,r:INTEGER;
 BEGIN
     IF (length(s)<2) THEN
-        RETURN True;
+        write(s is palindrome)
     END_IF
     l=0;
     r=length(s)-1;
     IF (s[left]=s[right]) THEN
     
-        RETURN Is_palindrome(s,l+1,r-1)
+        Is_palindrome(s,l+1,r-1)
     ELSE
-        RETURN False;
+        write(s is not palindrome)
     END_IF
-    RETURN Is_palindrome(s,l,r) ;
 END
